@@ -1,5 +1,3 @@
-make this look closer too discords o2auth prompt
-
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
