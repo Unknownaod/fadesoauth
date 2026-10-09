@@ -280,6 +280,10 @@ button:disabled { opacity: .55; cursor: not-allowed; }
 
 .fa-app-tile-sm { width: 38px; height: 38px; font-size: 16px; border-radius: 12px; }
 
+/* uploaded app icon */
+.fa-app-tile-img { overflow: hidden; padding: 0; border-color: rgba(255,255,255,.14); background: rgba(255,255,255,.06); }
+.fa-app-tile-img img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
 .fa-link-line {
   width: 54px;
   height: 0;
