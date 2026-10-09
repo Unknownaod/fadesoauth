@@ -6,7 +6,6 @@ import {
   Avatar,
   Brand,
   Icon,
-  LogoMark,
   Shell,
   SignInPanel,
   Spinner,
@@ -184,7 +183,7 @@ function ConsentFlow() {
         <div className="fa-link-row" aria-hidden="true">
           <AppTile name={appName} src={info?.app?.iconUrl} />
           <span className="fa-link-line" />
-          <LogoMark size={52} />
+          <Avatar user={user} size={52} />
         </div>
 
         <h1 id="fa-consent-title" className="fa-title fa-title-center">
