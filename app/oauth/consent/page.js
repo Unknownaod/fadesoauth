@@ -14,6 +14,7 @@ import {
   request,
   userLabel,
 } from "../../components/auth-kit";
+import { AppTile } from "../../components/app-tile";
 
 /* What each scope means, in plain language. */
 const SCOPE_COPY = {
@@ -181,7 +182,7 @@ function ConsentFlow() {
       <Brand />
       <section className="fa-card" aria-labelledby="fa-consent-title">
         <div className="fa-link-row" aria-hidden="true">
-          <span className="fa-app-tile">{appName.trim().slice(0, 1).toUpperCase()}</span>
+          <AppTile name={appName} src={info?.app?.iconUrl} />
           <span className="fa-link-line" />
           <LogoMark size={52} />
         </div>
