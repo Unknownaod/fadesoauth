@@ -123,7 +123,7 @@ export function LogoMark({ size = 44 }) {
           event.currentTarget.style.display = "none";
         }}
       />
-      <span className="fa-logo-letter" style={{ fontSize: size * 0.52 }}>F</span>
+      <span className="fa-logo-letter" style={{ fontSize: size * 0.52 }}></span>
     </span>
   );
 }
@@ -139,7 +139,7 @@ export function Brand() {
 
 export function Avatar({ user, size = 40 }) {
   const [broken, setBroken] = useState(false);
-  const initial = userLabel(user).trim().slice(0, 1).toUpperCase() || "F";
+  const initial = userLabel(user).trim().slice(0, 1).toUpperCase() || "";
 
   return (
     <span className="fa-avatar" style={{ width: size, height: size, fontSize: size * 0.42 }}>
