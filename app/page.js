@@ -14,6 +14,7 @@ import {
   request,
   userLabel,
 } from "./components/auth-kit";
+import { AppTile } from "./components/app-tile";
 
 function formatDate(value) {
   const date = value ? new Date(value) : null;
@@ -90,7 +91,7 @@ function AccountView({ user, onSignedOut, onExpired }) {
           ) : (
             grants.map((grant) => (
               <div className="fa-grant" key={grant.clientId}>
-                <span className="fa-app-tile fa-app-tile-sm">{(grant.name || "?").slice(0, 1).toUpperCase()}</span>
+                <AppTile name={grant.name} src={grant.iconUrl} small />
                 <span className="fa-account-copy">
                   <strong>{grant.name}</strong>
                   <small>
